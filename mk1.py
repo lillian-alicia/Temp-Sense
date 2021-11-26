@@ -19,10 +19,15 @@ disp.begin()
 WIDTH = disp.width
 HEIGHT = disp.height
 
-img = Image.new('RGB', (WIDTH, HEIGHT), color=(255, 0, 0))
+canvas = Image.new('RGB', (WIDTH, HEIGHT), color=(255, 0, 0))
 
-draw = ImageDraw.Draw(img)
+draw = ImageDraw.Draw(canvas)
 
-draw.rectangle((10, 10, WIDTH - 10, HEIGHT - 10), outline=(255, 255, 0), fill=(255, 0, 255))
+def draw_shape(shape, p1x, p1y, p2x, p2y, outline, fill):
+    draw.rectangle(p1x, p1y, p2x, p2y), outline, fill)
+    disp.display(canvas)
 
-disp.display(img)
+font = ImageFont.load_default()
+
+
+disp.display(canvas)
