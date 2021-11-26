@@ -1,5 +1,6 @@
 import ST7789
-import PIL, sys
+from PIL import Image, ImageDraw, ImageFont
+import sys
 
 disp = ST7789.ST7789(
         height = 240,
