@@ -1,4 +1,4 @@
-import st7789
+import ST7789
 import PIL, sys
 
 disp = ST7789.ST7789(
