@@ -1,6 +1,9 @@
+import st7789
+import PIL, sys
+
 disp = ST7789.ST7789(
         height = 240,
-        rotation = 90 
+        rotation = 90,
         port=0,
         cs=ST7789.BG_SPI_CS_FRONT,  # BG_SPI_CS_BACK or BG_SPI_CS_FRONT
         dc=9,
@@ -9,3 +12,9 @@ disp = ST7789.ST7789(
         offset_left=0 
         offset_top = 0
     )
+
+disp.begin()
+
+WIDTH = disp.width
+HEIGHT = disp.height
+
