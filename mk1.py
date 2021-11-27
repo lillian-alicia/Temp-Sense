@@ -4,7 +4,7 @@ import sys
 
 disp = ST7789.ST7789(
         height = 240,
-        rotation = 90,
+        rotation = 0,
         port=0,
         cs=ST7789.BG_SPI_CS_FRONT,  # BG_SPI_CS_BACK or BG_SPI_CS_FRONT
         dc=9,
@@ -29,6 +29,6 @@ def draw_rectangle(p1x, p1y, p2x, p2y, outline, fill):
 
 font = ImageFont.load_default()
 
-draw_rectangle(0,0,20,20,(0,0,0),(0,0,0))
+temp_display = draw_rectangle(0,0,120,120,(0,0,0),(0,0,0))
 
 disp.display(canvas)
