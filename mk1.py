@@ -24,7 +24,7 @@ canvas = Image.new('RGB', (WIDTH, HEIGHT), color=(255, 0, 0))
 draw = ImageDraw.Draw(canvas)
 
 def draw_rectangle(p1x, p1y, p2x, p2y, outline, fill):
-    draw.rectangle(p1x, p1y, p2x, p2y), outline, fill))
+    draw.rectangle((p1x, p1y, p2x, p2y), outline, fill)
     disp.display(canvas)
 
 font = ImageFont.load_default()
