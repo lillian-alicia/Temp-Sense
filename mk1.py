@@ -4,7 +4,7 @@ import sys
 
 disp = ST7789.ST7789(
         height = 240,
-        rotation = 0,
+        rotation = 45,
         port=0,
         cs=ST7789.BG_SPI_CS_FRONT,  # BG_SPI_CS_BACK or BG_SPI_CS_FRONT
         dc=9,
