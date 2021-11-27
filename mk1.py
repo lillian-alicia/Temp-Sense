@@ -29,6 +29,6 @@ def draw_rectangle(p1x, p1y, p2x, p2y, outline, fill):
 
 font = ImageFont.load_default()
 
-temp_display = draw_rectangle(0,0,120,120,(0,0,0),(0,0,0))
+temp_display = draw_rectangle(240,240,120,120,(0,0,0),(0,0,0))
 
 disp.display(canvas)
